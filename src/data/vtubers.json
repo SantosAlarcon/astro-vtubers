@@ -1,0 +1,106 @@
+[
+	{
+		"slug": "haato-akai",
+		"name": "Haato Akai",
+		"romaji": "赤井はあと",
+		"image": "/pinups/haato-akai.webp",
+		"info": {
+			"birthday": "2018-06-10",
+			"debut_stream": "2018-06-02",
+			"height": 154,
+			"gen": "HoloLive 1st Generation",
+			"yt_url": "https://youtube.com/@AkaiHaato"
+		}
+	},
+	{
+		"slug": "choco-yuzuki",
+		"name": "Choco Yuzuki",
+		"romaji": "癒月ちょこ",
+		"image": "/pinups/choco-yuzuki.webp",
+		"info": {
+			"birthday": "2018-02-14",
+			"debut_stream": "2018-09-04",
+			"height": 165,
+			"gen": "HoloLive 2nd Generation",
+			"yt_url": "https://youtube.com/@YuzukiChoco"
+		}
+	},
+	{
+		"slug": "noel-shirogane",
+		"name": "Noel Shirogane",
+		"romaji": "白銀ノエル",
+		"image": "/pinups/noel-shirogane.webp",
+		"info": {
+			"birthday": "2018-11-24",
+			"debut_stream": "2019-08-08",
+			"height": 158,
+			"gen": "HoloLive 3rd Generation",
+			"yt_url": "https://youtube.com/@ShiroganeNoel"
+		}
+	},
+    {
+		"slug": "marine-houshou",
+		"name": "Marine Houshou",
+		"romaji": "宝鐘マリン",
+		"image": "/pinups/marine-houshou.webp",
+		"info": {
+			"birthday": "2019-07-30",
+			"debut_stream": "2019-08-11",
+			"height": 150,
+			"gen": "HoloLive 3rd Generation",
+			"yt_url": "https://youtube.com/@HoushouMarine"
+		}
+	},
+    {
+		"slug": "lamy-yukihana",
+		"name": "Lamy Yukihana",
+		"romaji": "雪花ラミィ",
+		"image": "/pinups/lamy-yukihana.webp",
+		"info": {
+			"birthday": "2020-11-15",
+			"debut_stream": "2020-08-12",
+			"height": 158,
+			"gen": "HoloLive 5th Generation",
+			"yt_url": "https://youtube.com/@YukihanaLamy"
+		}
+	},
+    {
+		"slug": "nene-momosuzu",
+		"name": "Nene Momosuzu",
+		"romaji": "桃鈴ねね",
+		"image": "/pinups/nene-momosuzu.webp",
+		"info": {
+			"birthday": "2020-03-02",
+			"debut_stream": "2020-08-13",
+			"height": 159,
+			"gen": "HoloLive 5th Generation",
+			"yt_url": "https://youtube.com/@MomosuzuNene"
+		}
+	},
+    {
+		"slug": "chloe-sakamata",
+		"name": "Chloe Sakamata",
+		"romaji": "沙花叉クロヱ",
+		"image": "/pinups/chloe-sakamata.webp",
+		"info": {
+			"birthday": "2021-05-18",
+			"debut_stream": "2021-11-28",
+			"height": 148,
+			"gen": "holoX",
+			"yt_url": "https://youtube.com/@SakamataChloe"
+		}
+	},
+    {
+		"slug": "koyori-hakui",
+		"name": "Koyori Hakui",
+		"romaji":"博衣こより",
+		"image": "/pinups/koyori-hakui.webp",
+		"info": {
+			"birthday": "2021-03-15",
+			"debut_stream": "2021-11-28",
+			"height": 153,
+			"gen": "holoX",
+			"yt_url": "https://youtube.com/@HakuiKoyori"
+		}
+	}
+]

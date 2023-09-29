@@ -1,0 +1,155 @@
+---
+const { vtuber } = Astro.props;
+import vtubers from "../../data/vtubers.json";
+const vtuber_info = vtubers.find((vt) => vt.slug === vtuber);
+---
+
+<section id="vtuber__details">
+    <div id="details__container" transition:animate="slide">
+        <div id="vtuber__image">
+            <img src={vtuber_info?.image} alt={vtuber_info?.name} loading="lazy" />
+        </div>
+        <div id="vtuber__info">
+            <div id="vtuber__name">
+                <h1 class="name">{vtuber_info?.name}</h1>
+                <h2 class="japanese">{vtuber_info?.romaji}</h2>
+            </div>
+            <div id="vtuber__data">
+                <dl>
+                    <dt>Birthday</dt>
+                    <dd>
+                        {
+                            new Date(
+                                vtuber_info?.info.birthday,
+                            ).toLocaleDateString("en", {
+                                day: "numeric",
+                                month: "long",
+                            })
+                        }
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Debut Stream</dt>
+                    <dd>
+                        {
+                            new Date(
+                                vtuber_info?.info.debut_stream,
+                            ).toLocaleDateString("en", {
+                                day: "numeric",
+                                month: "long",
+                                year: "numeric",
+                            })
+                        }
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Height</dt>
+                    <dd>
+                        {vtuber_info?.info.height} cm
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Generation</dt>
+                    <dd>
+                        {vtuber_info?.info.gen}
+                    </dd>
+                </dl>
+            </div>
+
+            <a href={vtuber_info?.info.yt_url} target="_blank">YouTube</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    #vtuber__details {
+        padding: 3em;
+        background: url("/hololive-wp.webp");
+        background-size: cover;
+    }
+
+    #details__container {
+        display: flex;
+        gap: 3em;
+    }
+
+    #vtuber__image {
+        & img {
+            height: 720px;
+            filter: drop-shadow(0 0 1em #000a);
+        }
+    }
+
+    #vtuber__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        & a {
+            padding: 0.5em 2em;
+            background: linear-gradient(#b00 0%, #600 100%);
+            border-radius: 1em;
+            width: fit-content;
+            font-weight: bold;
+        }
+    }
+
+    #vtuber__data {
+        padding: 1em 0;
+
+        & dl {
+            display: table;
+            width: 100%;
+            padding: 1em 0;
+            border-bottom: 1px #666 solid;
+        }
+
+        & dt {
+            display: table-cell;
+            font-weight: 800;
+            width: 50%;
+        }
+
+        & dd {
+            text-align: left;
+            width: 50%;
+        }
+    }
+
+    #vtuber__name {
+        border-bottom: 1px #666 solid;
+    }
+
+    .name {
+        font-size: 5em;
+        color: #66f;
+        -webkit-text-stroke: 0.5px #fff;
+        font-weight: 800;
+        text-shadow: 0 4px .2em #000;
+    }
+
+    .japanese {
+        color: #66f;
+        -webkit-text-stroke: 0.5px #fff;
+        font-size: 2em;
+        text-shadow: 0 4px .2em #000;
+    }
+
+    @media (width < 720px) {
+        #details__container {
+            flex-direction: column;
+        }
+
+        .name {
+            font-size: 3.5em;
+        }
+
+        #vtuber__image {
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+</style>
+

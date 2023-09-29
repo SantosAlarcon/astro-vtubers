@@ -1,0 +1,24 @@
+---
+import "../../styles/global.css"
+import {getName} from "../../utils/getName.js";
+import VTuberDetails from "./VTuberDetails.astro";
+import Layout from "../../layouts/Layout.astro";
+const {vtuber} = Astro.params
+const name = getName(vtuber);
+export const getStaticPaths = (() => {  
+    return [
+        {params: {vtuber: "haato-akai"}},
+        {params: {vtuber: "choco-yuzuki"}},
+        {params: {vtuber: "noel-shirogane"}},
+        {params: {vtuber: "marine-houshou"}},
+        {params: {vtuber: "lamy-yukihana"}},
+        {params: {vtuber: "nene-momosuzu"}},
+        {params: {vtuber: "chloe-sakamata"}},
+        {params: {vtuber: "koyori-hakui"}},
+    ];
+});
+
+---
+<Layout title={`HoloLive VTubers - ${name}`}>
+        <VTuberDetails vtuber={vtuber} />
+</Layout>
