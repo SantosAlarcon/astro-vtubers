@@ -1,0 +1,38 @@
+---
+const { vtuber } = Astro.props;
+---
+
+<a href=`/vtubers/${vtuber.slug}`>
+    <div
+        id="vtuber"
+        style={`background: url(${vtuber.bg})`}
+        transition:name={vtuber.slug}
+    >
+    </div>
+</a>
+<style>
+    #vtuber {
+        width: 150px;
+        height: 150px;
+        background-position: center !important;
+        background-size: 115% !important;
+        transition: all 0.3s ease-in-out;
+        border-radius: 1em;
+
+        & a {
+            width: 150px;
+            height: 150px;
+        }
+
+        &:hover {
+            background-size: 150% !important;
+        }
+    }
+
+    @media (width < 720px) {
+        #vtuber {
+            width: 9em;
+            height: 9rem;
+        }
+    }
+</style>

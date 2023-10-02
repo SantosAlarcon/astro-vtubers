@@ -7,7 +7,8 @@ const vtuber_info = vtubers.find((vt) => vt.slug === vtuber);
 <section id="vtuber__details">
     <div id="details__container" transition:animate="slide">
         <div id="vtuber__image">
-            <img src={vtuber_info?.image} alt={vtuber_info?.name} />
+            <img src={vtuber_info?.image} alt={vtuber_info?.name}
+                transition:name={vtuber_info?.slug} />
         </div>
         <div id="vtuber__info">
             <div id="vtuber__name">
@@ -64,7 +65,7 @@ const vtuber_info = vtubers.find((vt) => vt.slug === vtuber);
 <style>
     #vtuber__details {
         padding: 3em;
-        background: url("/hololive-wp.webp");
+        background: url("/fixed_bg.webp");
         background-size: cover;
     }
 
@@ -153,6 +154,12 @@ const vtuber_info = vtubers.find((vt) => vt.slug === vtuber);
                 width: 100%;
                 height: auto;
             }
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        #vtuber__details {
+            background: url("/fixed_bg_dark.webp");
         }
     }
 </style>

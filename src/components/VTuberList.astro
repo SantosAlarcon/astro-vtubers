@@ -1,0 +1,26 @@
+---
+import vtubers from "../data/vtubers.json";
+import VTuber from "./VTuber.astro";
+---
+
+<section id="vtuber__list">
+    {vtubers.map((vt) => <VTuber vtuber={vt} />)}
+</section>
+<style>
+    #vtuber__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        gap: 1em;
+        background: url("/fixed_bg.webp");
+        background-size: cover;
+
+        @media (width < 720px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: url("/fixed_bg_dark.webp");
+        }
+    }
+</style>

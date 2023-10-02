@@ -1,8 +1,37 @@
 [
 	{
+		"slug": "sora-tokino",
+		"name": "Sora Tokino",
+		"romaji": "ときのそら",
+        "bg": "/thumbs/Tokino-Sora_thumb.webp",
+		"image": "/pinups/sora-tokino.webp",
+		"info": {
+			"birthday": "2017-03-05",
+			"debut_stream": "2017-09-07",
+			"height": 160,
+			"gen": "HoloLive Generation 0",
+			"yt_url": "https://youtube.com/@TokinoSora"
+		}
+	},
+	{
+		"slug": "miko-sakura",
+		"name": "Miko Sakura",
+		"romaji": "さくらみこ",
+        "bg": "/thumbs/Sakura-Miko_thumb.webp",
+		"image": "/pinups/miko-sakura.webp",
+		"info": {
+			"birthday": "2017-03-05",
+			"debut_stream": "2018-08-01",
+			"height": 152,
+			"gen": "HoloLive Generation 0",
+			"yt_url": "https://youtube.com/@SakuraMiko"
+		}
+	},
+{
 		"slug": "haato-akai",
 		"name": "Haato Akai",
 		"romaji": "赤井はあと",
+        "bg": "/thumbs/Akai-Haato_list_thumb.webp",
 		"image": "/pinups/haato-akai.webp",
 		"info": {
 			"birthday": "2018-06-10",
@@ -16,6 +45,7 @@
 		"slug": "choco-yuzuki",
 		"name": "Choco Yuzuki",
 		"romaji": "癒月ちょこ",
+        "bg": "/thumbs/Yuzuki-Choco_list_thumb.webp",
 		"image": "/pinups/choco-yuzuki.webp",
 		"info": {
 			"birthday": "2018-02-14",
@@ -29,6 +59,7 @@
 		"slug": "noel-shirogane",
 		"name": "Noel Shirogane",
 		"romaji": "白銀ノエル",
+        "bg": "/thumbs/Shirogane-Noel_thumb.webp",
 		"image": "/pinups/noel-shirogane.webp",
 		"info": {
 			"birthday": "2018-11-24",
@@ -41,6 +72,7 @@
     {
 		"slug": "marine-houshou",
 		"name": "Marine Houshou",
+        "bg": "/thumbs/Houshou-Marine_thumb.webp",
 		"romaji": "宝鐘マリン",
 		"image": "/pinups/marine-houshou.webp",
 		"info": {
@@ -55,6 +87,7 @@
 		"slug": "lamy-yukihana",
 		"name": "Lamy Yukihana",
 		"romaji": "雪花ラミィ",
+        "bg": "/thumbs/Yukihana-Lamy_list_thumb.webp",
 		"image": "/pinups/lamy-yukihana.webp",
 		"info": {
 			"birthday": "2020-11-15",
@@ -68,6 +101,7 @@
 		"slug": "nene-momosuzu",
 		"name": "Nene Momosuzu",
 		"romaji": "桃鈴ねね",
+        "bg": "/thumbs/Momosuzu-Nene_list_thumb.webp",
 		"image": "/pinups/nene-momosuzu.webp",
 		"info": {
 			"birthday": "2020-03-02",
@@ -81,6 +115,7 @@
 		"slug": "chloe-sakamata",
 		"name": "Chloe Sakamata",
 		"romaji": "沙花叉クロヱ",
+        "bg": "/thumbs/Sakamata-Chloe_list_thumb.webp",
 		"image": "/pinups/chloe-sakamata.webp",
 		"info": {
 			"birthday": "2021-05-18",
@@ -94,6 +129,7 @@
 		"slug": "koyori-hakui",
 		"name": "Koyori Hakui",
 		"romaji":"博衣こより",
+        "bg": "/thumbs/Hakui-Koyori_list_thumb.webp",
 		"image": "/pinups/koyori-hakui.webp",
 		"info": {
 			"birthday": "2021-03-15",

@@ -7,6 +7,8 @@ const {vtuber} = Astro.params
 const name = getName(vtuber);
 export const getStaticPaths = (() => {  
     return [
+        {params: {vtuber: "sora-tokino"}},
+        {params: {vtuber: "miko-sakura"}},
         {params: {vtuber: "haato-akai"}},
         {params: {vtuber: "choco-yuzuki"}},
         {params: {vtuber: "noel-shirogane"}},
