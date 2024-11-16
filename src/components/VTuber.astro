@@ -2,7 +2,7 @@
 const { vtuber } = Astro.props;
 ---
 
-<a href=`/vtubers/${vtuber.slug}`>
+<a href=`/vtubers/${vtuber.slug}` alt={vtuber.name} aria-label={vtuber.name}>
     <div
         id="vtuber"
         style={`background: url(${vtuber.bg})`}
