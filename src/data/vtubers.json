@@ -138,5 +138,20 @@
 			"gen": "holoX",
 			"yt_url": "https://youtube.com/@HakuiKoyori"
 		}
+	},
+    {
+		"slug": "ririka-ichijou",
+		"name": "Ririka Ichijou",    
+		"romaji":"条莉々華",
+        "bg": "/thumbs/Ichijou-Ririka_list_thumb.webp",    
+        "image": "/pinups/ririka-ichijou.webp",
+        "info": {
+			"birthday": "2023-05-12",
+			"debut_stream": "2023-09-09",
+			"height": 162,
+			"gen": "holoDEV_IS",
+			"yt_url": "https://youtube.com/@IchijouRirika"
+		}
 	}
+
 ]
